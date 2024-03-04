@@ -1,3 +1,10 @@
+"""
+    @Author: LunaEspindola
+    @Date: 2024-04-03
+    @Description: A Twitch bot that allows viewers to add songs to a Spotify playlist, skip the current song, delete a song from the playlist, view the current playlist, pause the current song, and resume the current song.
+"""
+
+# Import libraries
 import asyncio
 from twitchio.ext import commands
 from dotenv import load_dotenv
@@ -11,7 +18,7 @@ load_dotenv()
 # Twitch Bot Configuration
 TWITCH_BOT_USERNAME = 'BunnySongBot'
 TWITCH_BOT_TOKEN = os.getenv('TWITCH_BOT_TOKEN') 
-TWITCH_CHANNEL = 'SingaBunny'
+TWITCH_CHANNEL = os.getenv('TWITCH_CHANNEL')
 
 # Spotify API credentials
 CLIENT_ID = os.getenv('CLIENT_ID')
